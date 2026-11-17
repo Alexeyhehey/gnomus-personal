@@ -1,5 +1,5 @@
 {
- "version": "0.9.0",
+ "version": "0.9.1",
  "files": [
   {
    "src": "home/CHEATSHEET_RU.md",
@@ -11,7 +11,7 @@
    "src": "home/CLAUDE.md",
    "dst": "gnomus/CLAUDE.md",
    "mode": "replace",
-   "sha256": "48cec5d8d46c792fe540f3467fc1d8d38a7974d805fa53908eabd75973ec3c81"
+   "sha256": "1d89da9a6107f95097851a789e304e7b4b4a0b761d0e231315ded5391801dfbb"
   },
   {
    "src": "home/life/health.md",
@@ -80,6 +80,12 @@
    "sha256": "0cda386d4154f40c7d0cba20fcad1858d5010ba217497c231f24f497f861fdda"
   },
   {
+   "src": "home/tools/auto_update.ps1",
+   "dst": "gnomus/tools/auto_update.ps1",
+   "mode": "replace",
+   "sha256": "4d7c6643524fdaed7cc2ca07e72c08e7f861213e49a756c9e5e2c6d0c1d441c5"
+  },
+  {
    "src": "home/tools/backup_life.ps1",
    "dst": "gnomus/tools/backup_life.ps1",
    "mode": "replace",
@@ -101,7 +107,13 @@
    "src": "home/tools/update.ps1",
    "dst": "gnomus/tools/update.ps1",
    "mode": "replace",
-   "sha256": "bad6446029aa348b7ff1c9710bd3371d256f90b851c2d6b1d7110f88ff673bc3"
+   "sha256": "49d0d068f6802cd3b84e44ef6b69278a24f58c14753356cb2330620fbf8d1e64"
+  },
+  {
+   "src": "home/tools/update_source.txt",
+   "dst": "gnomus/tools/update_source.txt",
+   "mode": "replace",
+   "sha256": "74ac3cc2454828b05994fcc9b25bd2d9a4beb7b33811b158e4d1f80e14511bee"
   },
   {
    "src": "skills/alexu/SKILL.md",

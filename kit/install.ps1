@@ -35,6 +35,8 @@ $allow = @("Read(~/Gnomus/**)", "Edit(~/Gnomus/**)", "Bash(python tools/ask_loca
 if (-not $j.permissions) { $j | Add-Member permissions ([pscustomobject]@{ allow = $allow }) }
 elseif (-not $j.permissions.allow) { $j.permissions | Add-Member allow $allow }
 else { $j.permissions.allow = @($j.permissions.allow) + ($allow | Where-Object { $j.permissions.allow -notcontains $_ }) }
+# авто-режим: обычные действия без окон «разрешить?», рискованные отсекает встроенная проверка; оплата/отправка/удаление — по прошивке, через её «да»
+if (-not $j.permissions.defaultMode) { $j.permissions | Add-Member defaultMode 'auto' }
 [IO.File]::WriteAllText($sp, ($j | ConvertTo-Json -Depth 10), $utf8)  # без BOM: Claude Code не читает JSON с BOM
 
 $desk = [Environment]::GetFolderPath('Desktop')
@@ -43,6 +45,9 @@ Copy-Item "$G\ШПАРГАЛКА.md" "$desk\ГНОМУС — шпаргалка.
 # ежедневная копия памяти life/ в %USERPROFILE%\Gnomus-backup (14 дней, наружу не уходит)
 Register-ScheduledTask -TaskName GnomusBackup -Force -Action (New-ScheduledTaskAction -Execute powershell.exe -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$G\tools\backup_life.ps1`"") -Trigger (New-ScheduledTaskTrigger -Daily -At 21:00) -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries) | Out-Null
 "задача GnomusBackup: копия памяти каждый день в 21:00"
+# ночное автообновление из публичного репозитория (адрес — tools\update_source.txt)
+Register-ScheduledTask -TaskName GnomusUpdate -Force -Action (New-ScheduledTaskAction -Execute powershell.exe -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$G\tools\auto_update.ps1`"") -Trigger (New-ScheduledTaskTrigger -Daily -At 04:30) -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries) | Out-Null
+"задача GnomusUpdate: обновление каждую ночь в 04:30 (или при включении, если ПК был выключен)"
 $app = Get-StartApps | Where-Object { $_.Name -eq 'Claude' } | Select-Object -First 1
 if ($app) {
     $l = (New-Object -ComObject WScript.Shell).CreateShortcut("$desk\Гномус.lnk")

@@ -70,6 +70,10 @@ try {
     if (-not $Check) {
         $state.version = $m.version
         [IO.File]::WriteAllText($StateFile, (@{ version = $state.version; updated = (Get-Date).ToString('s'); files = $state.files } | ConvertTo-Json -Depth 4), $utf8)
+        if ($done.new.Count -or $done.updated.Count -or $done.kept.Count) {  # журнал для Гномуса: что сказать хозяйке
+            $line = "{0} обновлено до версии {1}: новые {2}; обновлены {3}; изменены вручную (лежат .new) {4}`r`n" -f (Get-Date -Format 'yyyy-MM-dd HH:mm'), $m.version, (($done.new | ForEach-Object { $_ -replace '^[^/]+/' }) -join ', '), (($done.updated | ForEach-Object { $_ -replace '^[^/]+/' }) -join ', '), ($done.kept -join ', ')
+            [IO.File]::AppendAllText("$G\tools\update.log", $line, $utf8)
+        }
         $desk = [Environment]::GetFolderPath('Desktop')
         if ($HomeDir -eq $HOME -and $done.updated -contains 'gnomus/ПРОЧТИ.md') { Copy-Item "$G\ПРОЧТИ.md" "$desk\ГНОМУС — прочти меня.txt" -Force }
         if ($HomeDir -eq $HOME -and ($done.updated -contains 'gnomus/ШПАРГАЛКА.md' -or $done.new -contains 'gnomus/ШПАРГАЛКА.md')) { Copy-Item "$G\ШПАРГАЛКА.md" "$desk\ГНОМУС — шпаргалка.txt" -Force }
