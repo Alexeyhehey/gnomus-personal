@@ -52,6 +52,7 @@ try {
         $s = Get-Content $StateFile -Raw -Encoding UTF8 | ConvertFrom-Json
         $state.version = $s.version; foreach ($p in $s.files.PSObject.Properties) { $state.files[$p.Name] = $p.Value }
     }
+    $oldVer = $state.version
     $done = @{ new = @(); updated = @(); same = @(); kept = @(); seeded = @() }
     foreach ($e in $m.files) {
         $srcBytes = [IO.File]::ReadAllBytes((Join-Path $kit ($e.src -replace '/', '\')))
@@ -80,7 +81,7 @@ try {
     }
     $verb = if ($Check) { 'будет' } else { 'готово' }
     if ($Adopt) { "приняты как установленные: $($state.files.Count) файлов, версия $($m.version)"; exit 0 }
-    "версия: $(if ($state.version) { $state.version } else { 'неизвестна' }) -> $($m.version) ($verb)"
+    "версия: $(if ($oldVer) { $oldVer } else { 'неизвестна' }) -> $($m.version) ($verb)"
     "новые: $($done.new.Count); обновлены: $($done.updated.Count); без изменений: $($done.same.Count); новые файлы памяти: $($done.seeded.Count)"
     foreach ($k in $done.new + $done.updated) { "  + $k" }
     if ($done.kept.Count) { "ИЗМЕНЕНЫ ВРУЧНУЮ, не тронуты (новая версия лежит рядом с окончанием .new):"; foreach ($k in $done.kept) { "  ! $k" } }

@@ -1,5 +1,5 @@
 {
- "version": "0.9.1",
+ "version": "0.9.2",
  "files": [
   {
    "src": "home/CHEATSHEET_RU.md",
@@ -107,7 +107,7 @@
    "src": "home/tools/update.ps1",
    "dst": "gnomus/tools/update.ps1",
    "mode": "replace",
-   "sha256": "49d0d068f6802cd3b84e44ef6b69278a24f58c14753356cb2330620fbf8d1e64"
+   "sha256": "6f18ddb211ce644ada3c176bda8ddf4bb0bf3fe2a52cbe1baeaeb1b08d78d10e"
   },
   {
    "src": "home/tools/update_source.txt",
