@@ -1,0 +1,215 @@
+{
+ "version": "0.9.0",
+ "files": [
+  {
+   "src": "home/CHEATSHEET_RU.md",
+   "dst": "gnomus/ШПАРГАЛКА.md",
+   "mode": "replace",
+   "sha256": "774a78c565035f459a9e35e6c502dc333cd20707c71171beb15daea79c8d6f01"
+  },
+  {
+   "src": "home/CLAUDE.md",
+   "dst": "gnomus/CLAUDE.md",
+   "mode": "replace",
+   "sha256": "48cec5d8d46c792fe540f3467fc1d8d38a7974d805fa53908eabd75973ec3c81"
+  },
+  {
+   "src": "home/life/health.md",
+   "dst": "gnomus/life/health.md",
+   "mode": "seed",
+   "sha256": "dcb9a944870e82a71e186a31e6f602aeb6b12e0f4561c21a85b35bfc34fee6e4"
+  },
+  {
+   "src": "home/life/journal.md",
+   "dst": "gnomus/life/journal.md",
+   "mode": "seed",
+   "sha256": "d3a47a889344b25e1d468de0ed7482a13df3c4437e6ac6b05dfcc152a1870da0"
+  },
+  {
+   "src": "home/life/meds.md",
+   "dst": "gnomus/life/meds.md",
+   "mode": "seed",
+   "sha256": "a50f86d3cf8080c9b04963befae830dea5c1f840b44794d6af128ed6e8e1d25a"
+  },
+  {
+   "src": "home/life/money.md",
+   "dst": "gnomus/life/money.md",
+   "mode": "seed",
+   "sha256": "471f74452c1a61109bf9b60be8c37d638569f4fb897d59902a1932e849339f61"
+  },
+  {
+   "src": "home/life/profile.md",
+   "dst": "gnomus/life/profile.md",
+   "mode": "seed",
+   "sha256": "32f4c9dbd74859fe2a0101a157f46fb14d48d96601a3d5a5949a0a22ec0a7c87"
+  },
+  {
+   "src": "home/life/work.md",
+   "dst": "gnomus/life/work.md",
+   "mode": "seed",
+   "sha256": "5b06c5e399dc8d5e91efd3a340694d54fa3ab61f70f1aca420bc1c8c9e620091"
+  },
+  {
+   "src": "home/README_RU.md",
+   "dst": "gnomus/ПРОЧТИ.md",
+   "mode": "replace",
+   "sha256": "933a10bf603eea5f38b5f1ac0f770520240a1a95fd434cb8a00a099e7a3f3f86"
+  },
+  {
+   "src": "home/tools/add_key.cmd",
+   "dst": "gnomus/tools/add_key.cmd",
+   "mode": "replace",
+   "sha256": "0350eb4329ebb1aa8683d323ebb9de2e4b62d6c1d29d3b8b6d84c5dc1c198658"
+  },
+  {
+   "src": "home/tools/add_key.ps1",
+   "dst": "gnomus/tools/add_key.ps1",
+   "mode": "replace",
+   "sha256": "d7fe20ffd52bebe489da8e3a1642137e5c7e47c4cfaa62407a9c4542966f107b"
+  },
+  {
+   "src": "home/tools/ask_free.py",
+   "dst": "gnomus/tools/ask_free.py",
+   "mode": "replace",
+   "sha256": "283b8961ee23a67dd6a9e206e58acdc46f6c8bb1220e7f36954b08ae67094a1e"
+  },
+  {
+   "src": "home/tools/ask_local.py",
+   "dst": "gnomus/tools/ask_local.py",
+   "mode": "replace",
+   "sha256": "0cda386d4154f40c7d0cba20fcad1858d5010ba217497c231f24f497f861fdda"
+  },
+  {
+   "src": "home/tools/backup_life.ps1",
+   "dst": "gnomus/tools/backup_life.ps1",
+   "mode": "replace",
+   "sha256": "81715b4f0be243330a21d65ff858608dd8c8fb50f458dd714ae1b162bdda46d9"
+  },
+  {
+   "src": "home/tools/doctor.py",
+   "dst": "gnomus/tools/doctor.py",
+   "mode": "replace",
+   "sha256": "3d7f1b2af4786e7d9b48f72765036c63424f49897f492468ec1ea448d2f41693"
+  },
+  {
+   "src": "home/tools/sunday_reminder.ps1",
+   "dst": "gnomus/tools/sunday_reminder.ps1",
+   "mode": "replace",
+   "sha256": "1494310b61d2b8c2e479ad3b052ab32b4ca56450449bf8b7b594ba4e3ff2e1be"
+  },
+  {
+   "src": "home/tools/update.ps1",
+   "dst": "gnomus/tools/update.ps1",
+   "mode": "replace",
+   "sha256": "bad6446029aa348b7ff1c9710bd3371d256f90b851c2d6b1d7110f88ff673bc3"
+  },
+  {
+   "src": "skills/alexu/SKILL.md",
+   "dst": "skills/alexu/SKILL.md",
+   "mode": "replace",
+   "sha256": "fb8827ef88c860c639f9ac4aabe13f82080c956622298e9ed6d7b5fdbc466be6"
+  },
+  {
+   "src": "skills/apteka/SKILL.md",
+   "dst": "skills/apteka/SKILL.md",
+   "mode": "replace",
+   "sha256": "47e7e62a6b368aa979d78ceefbd29c6c903c3bd5b5ca1be8e5b3bc1d6a11cc2b"
+  },
+  {
+   "src": "skills/bezopasnost/SKILL.md",
+   "dst": "skills/bezopasnost/SKILL.md",
+   "mode": "replace",
+   "sha256": "64172724a11cf613b3196ad0dc4f528f1a2009e04cddb7b150153459f7ea4bf3"
+  },
+  {
+   "src": "skills/dengi/SKILL.md",
+   "dst": "skills/dengi/SKILL.md",
+   "mode": "replace",
+   "sha256": "d4e38d2fce0fa88aa5ac527c370ca84732ee6c3416ee8b25783a1aec8e44377e"
+  },
+  {
+   "src": "skills/dokumenty/SKILL.md",
+   "dst": "skills/dokumenty/SKILL.md",
+   "mode": "replace",
+   "sha256": "f5a354f474939d0060173b95712871a96a1f55a067ca5646d1f519c376dadc20"
+  },
+  {
+   "src": "skills/gorod/SKILL.md",
+   "dst": "skills/gorod/SKILL.md",
+   "mode": "replace",
+   "sha256": "0bb4d6c24b0d1a69efb45c11ea4bc60d0d1d07bdde509126c0649de77a0a3403"
+  },
+  {
+   "src": "skills/idei/SKILL.md",
+   "dst": "skills/idei/SKILL.md",
+   "mode": "replace",
+   "sha256": "14b15bf1db9dabb2b153bb0a92629fdc609aff933f19c53eccf762b7f561f63e"
+  },
+  {
+   "src": "skills/itogi/SKILL.md",
+   "dst": "skills/itogi/SKILL.md",
+   "mode": "replace",
+   "sha256": "d03459bd560dfc886b22a4b8727f6bba79d8b7c83855830be0b8c98ecf892451"
+  },
+  {
+   "src": "skills/moduli/SKILL.md",
+   "dst": "skills/moduli/SKILL.md",
+   "mode": "replace",
+   "sha256": "2001a6a877a50c755ced3c6b7179e445ba438c9e6ac4c85aec8d277d5d5d657a"
+  },
+  {
+   "src": "skills/novyi-navyk/SKILL.md",
+   "dst": "skills/novyi-navyk/SKILL.md",
+   "mode": "replace",
+   "sha256": "506355287ab3b7957d6f545589c020db9a55eaaa375dab7a3805efa99a529616"
+  },
+  {
+   "src": "skills/obnovlenie/SKILL.md",
+   "dst": "skills/obnovlenie/SKILL.md",
+   "mode": "replace",
+   "sha256": "3edcbace05a29485efccbbd9d195f665df84e22d7ca089ee8eb71af78dee63de"
+  },
+  {
+   "src": "skills/rabota/SKILL.md",
+   "dst": "skills/rabota/SKILL.md",
+   "mode": "replace",
+   "sha256": "f040ae4232ee46c855957698e140793dfe20d5272ca9d34544859a2c1e25e1e0"
+  },
+  {
+   "src": "skills/telefon/SKILL.md",
+   "dst": "skills/telefon/SKILL.md",
+   "mode": "replace",
+   "sha256": "7b5bc579b0bad08e7a650127ec43889115cd11b55a9da23e607b3d8dabe66765"
+  },
+  {
+   "src": "skills/utro/SKILL.md",
+   "dst": "skills/utro/SKILL.md",
+   "mode": "replace",
+   "sha256": "ff4bec0fa88d42c6f2f6fff33db1694c82f8b34813cd76d95a38f82a94533716"
+  },
+  {
+   "src": "skills/zarabotok/SKILL.md",
+   "dst": "skills/zarabotok/SKILL.md",
+   "mode": "replace",
+   "sha256": "84108b09543ede82bf1d2a8ccdc5a59c04ada457d233f7c4ae487347f6db555a"
+  },
+  {
+   "src": "skills/zdorovie/SKILL.md",
+   "dst": "skills/zdorovie/SKILL.md",
+   "mode": "replace",
+   "sha256": "820b321ce6f38f32ca3bc47c9ff735eb35993dc53d7c3747b950f88e5da8971d"
+  },
+  {
+   "src": "skills/znakomstvo/SKILL.md",
+   "dst": "skills/znakomstvo/SKILL.md",
+   "mode": "replace",
+   "sha256": "cad13bb429077ad2da05621e7ad0277baa40775c93bc16a044d96436e8ba7025"
+  },
+  {
+   "src": "global/CLAUDE.md",
+   "dst": "claude/CLAUDE.md",
+   "mode": "replace",
+   "sha256": "fd06784cf11c65003c82085380e7c8eefd51095cb89c0a85e35ed3a55766708f"
+  }
+ ]
+}
