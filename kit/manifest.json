@@ -1,5 +1,5 @@
 {
- "version": "0.9.2",
+ "version": "0.9.3",
  "files": [
   {
    "src": "home/CHEATSHEET_RU.md",
@@ -11,7 +11,7 @@
    "src": "home/CLAUDE.md",
    "dst": "gnomus/CLAUDE.md",
    "mode": "replace",
-   "sha256": "1d89da9a6107f95097851a789e304e7b4b4a0b761d0e231315ded5391801dfbb"
+   "sha256": "64c73f4dc328bd1174f21d3918f0717033afad7096c9899e8b17f9d35cac6af7"
   },
   {
    "src": "home/life/health.md",
@@ -221,7 +221,7 @@
    "src": "global/CLAUDE.md",
    "dst": "claude/CLAUDE.md",
    "mode": "replace",
-   "sha256": "fd06784cf11c65003c82085380e7c8eefd51095cb89c0a85e35ed3a55766708f"
+   "sha256": "dec6fab330b4cd925adf1c46b0c21bd59a328522715e1502670e98a5005f2c63"
   }
  ]
 }
